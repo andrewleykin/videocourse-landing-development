@@ -2,20 +2,84 @@
 
 .container 
 	width 100%
-	max-width 1170px
+	max-width 1200px
 	margin 0 auto
 	@media (max-width: 1200px) 
 		padding 0 10px
 
 
+.section
+	padding-top 110px
+	padding-bottom 120px
+	@media(max-width breakpoint-lg)
+		padding-top 70px
+		padding-bottom 80px
+	@media(max-width breakpoint-md)
+		padding-top 30px
+		padding-bottom 30px
+	&--bg
+		background-position center
+		background-repeat no-repeat
+		position relative
+		z-index 0
+		&:after
+			content ''
+			display block
+			width 100%
+			height 100%
+			position absolute
+			top 0
+			left 0
+			background-color rgba(255, 255, 255, 0.85)
+			z-index -1
+  
 
+.section__subtitle
+	color mine-shaft
+	font-family font-k
+	font-size 24px
+	text-align center
+	display block
+	margin-bottom 20px
+	@media(max-width breakpoint-md)
+		font-size 18px
+		margin-bottom 10px
 
-// футер к низу
+.section__title
+	color mine-shaft
+	font-family font-m
+	font-size 30px
+	font-weight 700
+	text-transform uppercase
+	text-align center
+	padding-bottom 43px
+	position relative
+	&:after
+		content ''
+		display block
+		width 60px
+		height 3px
+		background-color froly
+		position absolute
+		left 50%
+		transform translateX(-50%)
+		bottom 0
+	& + .section__text
+		margin-top 45px
+	@media(max-width breakpoint-md)
+		font-size 24px
+		padding-bottom 20px
+		& + .section__text
+			margin-top 20px
 
-body 
-	display flex
-	flex-direction column
-
-
-.main 
-	flex auto
+.section__text
+	color dusty-gray
+	font-family font-r
+	font-size 15px
+	font-weight 400
+	line-height 24px
+	text-align center
+	width 100%
+	max-width 845px
+	margin-left auto
+	margin-right auto

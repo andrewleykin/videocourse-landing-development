@@ -1,0 +1,16 @@
+<div class="team__block">
+  <div class="hover-block">
+    <div class="hover-block__img">
+      <img src="app/img/content/team/@@id.jpg" alt="@@name">
+    </div>
+    <div class="hover-block__content">
+      @@for (var i = 0; i < context.link.length; i++) {
+        <a href="`+context.link[i].href+`" class="team__block-link">@@include('./icon.html', { "name": "`+context.link[i].icon+`" })</a>
+      }
+    </div>
+  </div>
+  <div class="team__block-info">
+    <h3 class="team__block-name">@@name</h3>
+    <span class="team__block-post">@@post</span>
+  </div>
+</div>

@@ -1,0 +1,18 @@
+<section class="section work" id="work">
+  <div class="container">
+    <div class="work__wrap">
+      <div class="work__header">
+        @@include('../elems/section-header.html', {
+          "subtitle": "What we do",
+          "title": "Наши работы"
+        })
+      </div>
+      <div class="work__content review-slider">
+        @@loop('../elems/work-slider-item.html', [
+          { "id": "1", "title": "Сайт для аквапарка “Океан впечатлений”", "text": "Повышение конверсии в 1.5 раза, благодаря продающей странице" },
+          { "id": "1", "title": "Сайт про красивую медузу", "text": "Сделали супер уникальное предложение одной медузе" }
+        ])
+      </div>
+    </div>
+  </div>
+</section>

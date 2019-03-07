@@ -1,0 +1,75 @@
+.work
+  padding-bottom 0
+
+.work__header
+  margin-bottom 70px
+  @media(max-width breakpoint-md)
+    margin-bottom 30px
+
+.work__content
+  height 100%
+  .slick-list
+    overflow visible
+  .slick-arrow
+    width 30px
+    height 30px
+    border-top-color white
+    border-right-color white
+  @media(max-width breakpoint-md)
+    .slick-arrow
+      width 15px
+      height 15px
+
+.work__item
+  height 100%
+  &.slick-active
+    position relative
+    z-index 10
+
+.work__item-wrap
+  position relative
+  height 572px
+  display flex
+  align-items center
+  flex-direction column
+  justify-content flex-end
+  padding-bottom 60px
+  text-align center
+  @media(max-width breakpoint-md)
+    height 300px
+    overflow hidden
+  @media(max-width breakpoint-sm)
+    padding-bottom 20px
+
+.work__img
+  position absolute
+  width 100vw
+  height 100%
+  top 0
+  z-index -1
+  display flex
+  justify-content center 
+  overflow hidden
+  img 
+    max-width none
+  @media(max-width breakpoint-md)
+    height auto
+    left 50%
+    top 50%
+    transform translate(-50%, -50%)
+
+.work__title
+  color white
+  font-family font-m
+  font-size 24px
+  font-weight 700
+  margin-bottom 10px
+  @media(max-width breakpoint-sm)
+    font-size 18px
+
+.work__text
+  color white
+  font-family font-m
+  font-size 16px
+  @media(max-width breakpoint-sm)
+    font-size 14px

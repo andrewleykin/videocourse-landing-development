@@ -1,0 +1,87 @@
+.people
+	padding-bottom 130px
+	background-image url('../img/content/people/bg.jpg')
+	background-size cover
+	@media(max-width breakpoint-lg)
+		padding-bottom 90px
+	@media(max-width breakpoint-md)
+		padding-bottom 30px
+
+.people__header
+	margin-bottom 100px
+	@media(max-width breakpoint-md)
+		margin-bottom 30px
+
+.people__content
+	display flex
+	flex-wrap wrap
+	justify-content space-between
+	@media(max-width breakpoint-md)
+		flex-direction column
+
+.people__block
+	width 100%
+	max-width 513px
+	display flex
+	&:first-child
+		margin-bottom 80px
+	@media(max-width breakpoint-xl)
+		max-width 450px
+	@media(max-width breakpoint-lg)
+		max-width 350px
+	@media(max-width breakpoint-md)
+		max-width 100%
+		&:first-child
+			margin-bottom 0
+		&+&
+			margin-top 30px
+
+.people__block-img
+	 flex none
+	 margin-right 30px
+	 img
+		border-radius 50%
+		overflow hidden
+	@media(max-width breakpoint-sm)
+		max-width 80px
+
+.people__block-name
+	color mine-shaft
+	font-family font-m
+	font-size 14px
+	font-weight bold
+	text-transform uppercase
+	margin-bottom 15px
+  @media(max-width breakpoint-sm)
+		font-size 16px
+		margin-bottom 10px
+
+.people__block-post
+	color mine-shaft
+	font-style italic
+	font-family font-r
+	font-size 15px
+	font-weight 300
+	padding-bottom 21px
+	display block
+	margin-bottom 25px
+	position relative
+	&:after
+		content ''
+		display block
+		width 60px
+		height 3px
+		background-color froly
+		position absolute
+		bottom 0
+		left 0
+	@media(max-width breakpoint-sm)
+		padding-bottom 10px
+		margin-bottom 10px
+
+.people__block-text
+	color dusty-gray
+	font-family font-r
+	font-size 15px
+	font-weight 400
+	line-height 24px

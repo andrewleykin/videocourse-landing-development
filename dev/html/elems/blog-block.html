@@ -1,0 +1,21 @@
+<a href="#" class="blog__block">
+  <div class="blog__block-img">
+    <img src="app/img/content/blog/@@id.jpg" alt="@@title">
+    <div class="blog__block-date">
+      <b>@@date</b>
+      <span>@@month</span>
+    </div>
+  </div>
+  <div class="blog__block-info">
+    <h3 class="blog__block-title">@@title</h3>
+    <p class="blog__block-text">@@text</p>
+  </div>
+  <div class="blog__actions">
+    @@for (var i = 0; i < context.actions.length; i++) {
+      <div class="blog__actions-block">
+        <div class="blog__actions-icon">@@include('./icon.html', { "name": "`+context.actions[i].icon+`" })</div>
+        <span class="blog__actions-num">`+context.actions[i].num+`</span>
+      </div>
+    }
+  </div>
+</a>

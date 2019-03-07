@@ -1,0 +1,37 @@
+.form__group
+  position relative
+  &+&
+    margin-top 10px
+
+.form__input
+  width 100%
+  border 1px solid mercury
+  background-color white
+  color silver
+  font-family font-r
+  font-size 15px
+  font-weight 300
+  font-style italic
+  padding 0 10px
+  height 40px
+  line-height 40px
+  &:focus
+    & + .form__label
+      opacity 0
+
+.form__label
+  position absolute
+  left 10px
+  top 13px
+  color silver
+  font-family font-r
+  font-size 15px
+  font-weight 300
+  font-style italic
+  cursor pointer
+  transition all .2s
+  &.hide
+    opacity 0
+
+.form__textarea
+  height 150px

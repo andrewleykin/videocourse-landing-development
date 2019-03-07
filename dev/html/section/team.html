@@ -1,0 +1,20 @@
+<section class="section team">
+  <div class="container">
+    <div class="team__wrap">
+      <div class="team__header">
+        @@include('../elems/section-header.html', {
+          "subtitle": "Who we are",
+          "title": "Наша команда",
+          "text": "У нас очень большая команда, которая делает всё. Здесь есть и дизайнеры и разработчики и конечно фотографы. Вы можете посмотреть на их социальные сети, и удивиться какие они молодцы."
+        })
+      </div>
+      <div class="team__content">
+        @@loop('../elems/team-block.html', [
+          { "id": "1", "name": "Андрей Лейкин", "post": "Разработчик", "link": [ { "icon": "fb", "href": "#" }, { "icon": "tw", "href": "#" }, { "icon": "pt", "href": "#" }, { "icon": "inst", "href": "#" } ] },
+          { "id": "2", "name": "Дмитрий Повелин", "post": "Боэндинг/Дизайнер", "link": [ { "icon": "fb", "href": "#" }, { "icon": "inst", "href": "#" } ] },
+          { "id": "3", "name": "Михаил Гарлиц", "post": "Креативщик", "link": [ { "icon": "tw", "href": "#" }, { "icon": "pt", "href": "#" }, { "icon": "inst", "href": "#" } ] }
+        ])
+      </div>
+    </div>
+  </div>
+</section>

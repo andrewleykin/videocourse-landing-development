@@ -1,0 +1,30 @@
+<footer class="footer" id="footer">
+  <div class="container">
+    <div class="footer__wrap">
+      <div class="footer__info">
+        <div class="footer__logo">Leykin</div>
+        <p class="footer__text">Лучшие курсы которые я когда-либо проходил и делал. Каждому советую попробовать сделать это. Свой первый сайт, своё первое достижение.</p>
+        <span class="footer__subscribes"><b>15000</b> подписчиков</span>
+        <div class="footer__social">
+          @@include('../common/footer-social.html')       
+        </div>
+        <div class="footer__mailing">
+          @@include('../common/footer-mailing.html')
+        </div>
+      </div>
+      <div class="footer__blog">
+        <h4 class="footer__subtitle">Блог</h3>
+        @@loop('../elems/footer-block.html', [
+          { "id": "1", "title": "Самый важный элемент съемки это свет", "date": "Янв 9, 2016" },
+          { "id": "2", "title": "Ты никогда не сможешь повторить это", "date": "Янв 9, 2016" },
+          { "id": "3", "title": "Останься наедине с собой чтобы понять кто ты", "date": "Янв 9, 2016" }
+        ])
+      </div>
+      <div class="footer__form">
+        <h4 class="footer__subtitle">Напишите нам</h3>
+        @@include('../common/footer-form.html')
+      </div>
+    </div>
+    <p class="footer__copyright">© <span class="footer__copyright-year">2019</span> Курс по веб-разработке от <span class="footer__copyright-author">Leykin</span></p>
+  </div>
+</footer>

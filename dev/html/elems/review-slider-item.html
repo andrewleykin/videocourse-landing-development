@@ -1,0 +1,16 @@
+<div class="review-slider__item">
+  <div class="review-slider__item-wrap">
+    @@if (context.icon) {
+      <div class="review-slider__item-icon">@@include('./icon.html', { "name": "@@icon" })</div>
+    }
+    @@if (context.img) {
+      <div class="review-slider__item-img">
+        <img src="app/img/content/@@img.jpg" alt="@@name @@img">
+      </div>
+    }
+    <div class="review-slider__item-info">
+      <p class="review-slider__item-text">@@text</p>
+      <span class="review-slider__item-name">@@name</span>
+    </div>
+  </div>
+</div>

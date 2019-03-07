@@ -1,0 +1,20 @@
+<section class="section history" id="history">
+  <div class="container">
+    <div class="history__wrap">
+      <div class="history__header">
+        @@include('../elems/section-header.html', {
+          "subtitle": "What we do",
+          "title": "Наша история",
+          "text": "Когда-то давным давно, я захотел изучить верстку и веб-разработку. Я долго думал смогу ли я это сделать! Но тут я повстречал простой и понятный курс от Андрея Лейкина, он меня научил верстать простые сайты. И дал хороший фундамент"
+        })
+      </div>
+      <div class="history__content">
+        @@loop('../elems/history-block.html', [
+          { "id": 1, "icon": "team", "title": "Супер команда" },
+          { "id": 2, "icon": "time", "title": "Проверенно временем" },
+          { "id": 3, "icon": "home", "title": "Уютная атмосфера" }
+        ])
+      </div>
+    </div>
+  </div>
+</section>

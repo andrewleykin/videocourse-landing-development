@@ -1,0 +1,19 @@
+<section class="section blog" id="blog">
+  <div class="container">
+    <div class="blog__wrap">
+      <div class="blog__header">
+        @@include('../elems/section-header.html', {
+          "subtitle": "Our stories",
+          "title": "Последний блог"
+        })
+      </div>
+      <div class="blog__content">
+        @@loop('../elems/blog-block.html', [
+          { "id": "1", "date": "15", "month": "Янв", "title": "Моё рабочее место", "text": "Как организовать своё рабочее место, чтобы было максимально удобно.", "actions": [ { "icon": "blog-view", "num": "542" }, { "icon": "blog-comment", "num": "17" } ] },
+          { "id": "2", "date": "14", "month": "Янв", "title": "Устройства для работы", "text": "Какие инструменты использовать в работе? Что самое крутое?", "actions": [ { "icon": "blog-view", "num": "992" }, { "icon": "blog-comment", "num": "45" } ] },
+          { "id": "3", "date": "12", "month": "Дек", "title": "Передовые технологии", "text": "Мы расскажем о самых трендовых технологиях и как их использовать уже сегодня.", "actions": [ { "icon": "blog-view", "num": "1450" }, { "icon": "blog-comment", "num": "104" } ] }
+        ])
+      </div>
+    </div>
+  </div>
+</section>

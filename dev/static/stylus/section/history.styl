@@ -1,0 +1,55 @@
+.history
+  padding-top 90px
+  padding-bottom 110px
+  @media(max-width breakpoint-lg)
+    padding-top 50px
+    padding-bottom 70px
+
+.history__header
+  margin-bottom 100px
+  @media(max-width breakpoint-md)
+    margin-bottom 40px
+
+.history__content
+  display flex
+  @media(max-width breakpoint-md)
+    flex-direction column
+
+.history__block
+  &+&
+    margin-left 30px
+  @media(max-width breakpoint-md)
+    &:nth-child(even)
+      .hover-block
+        flex-direction row-reverse
+      .hover-block__content
+        margin-left 0
+        margin-right 20px
+    &+&
+      margin-left 0
+      margin-top 20px
+
+.history__block-wrap
+  display flex
+  flex-direction column
+  align-items center
+  text-align center
+
+.history__block-icon
+  margin-bottom 10px
+  .icon
+    fill white
+    width 32px
+    height 32px
+  @media(max-width breakpoint-md)
+    .icon
+      fill mine-shaft
+  
+.history__block-title
+  color white
+  font-family font-m
+  font-size 18px
+  font-weight 700
+  text-transform uppercase
+  @media(max-width breakpoint-md)
+    color mine-shaft

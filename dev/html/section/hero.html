@@ -1,0 +1,20 @@
+<section class="hero">
+  <div class="container">
+    <div class="hero__wrap">
+      <div class="hero__slider">
+        @@loop('../elems/hero-item.html', [
+          { "id": "1", "subtitle": "Creative Template", "title": "Hello world" },
+          { "id": "2", "subtitle": "Source Work", "title": "Main Work" },
+          { "id": "3", "subtitle": "Very Information", "title": "Main Info" },
+          { "id": "4", "subtitle": "My Phone", "title": "Hello Contacts" }
+        ])
+      </div>
+      <div class="hero__dots">
+        <span class="hero__dot"><b>01</b> Интро</span>
+        <span class="hero__dot"><b>02</b> Работа</span>
+        <span class="hero__dot"><b>03</b> Информация</span>
+        <span class="hero__dot"><b>04</b> контакты</span>
+      </div>
+    </div>
+  </div>
+</section>

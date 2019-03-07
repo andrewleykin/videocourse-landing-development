@@ -1,0 +1,86 @@
+.header
+  position absolute
+  top 0
+  left 0
+  right 0
+  z-index 100
+  overflow hidden
+
+.header__wrap
+  display flex
+  align-items center
+  @media(max-width breakpoint-md)
+    padding 15px 0
+
+.header__logo
+  margin-right auto
+  color white
+  font-family font-m
+  font-size 30px
+  font-weight 700
+
+.header__menu
+  margin-right 45px
+  @media(max-width breakpoint-md)
+    position fixed
+    left 100%
+    top 0
+    bottom 0
+    right 0
+    height 100vh
+    margin-right 0
+    transition all .2s
+    &.active
+      left calc(100% - 150px)
+
+.header__link
+  .icon
+    width 18px
+    height 18px
+    fill white
+    transition all .2s
+  &+&
+    margin-left 40px
+  &:hover
+    .icon
+      fill sweet-corn
+  @media(max-width breakpoint-md)
+    &+&
+      margin-left 20px
+
+.header__burger
+  width = 28px
+  height = 3px
+  translate = 7px
+  bg = white
+
+  cursor pointer
+  display none
+  flex-direction column
+  background transparent
+  margin-left 20px
+  transition all .2s
+  &::before,&::after,span
+    content ""
+    display block
+    width width
+    height height
+    background bg
+  &::before
+    margin-bottom translate
+  &::after
+    margin-top translate
+  &.active
+    position fixed
+    z-index 100
+    right 10px
+    span
+      opacity 0
+    &::before 
+      margin-bottom 0
+      transform translateY(3px) rotate(45deg)
+    &::after 
+      margin-top 0
+      transform translateY(-3px)  rotate(-45deg)
+  @media(max-width breakpoint-md)
+    display flex

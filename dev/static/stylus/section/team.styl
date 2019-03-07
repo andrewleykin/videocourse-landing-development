@@ -1,0 +1,88 @@
+.team
+  padding-top 100px
+  @media(max-width breakpoint-lg)
+    padding-top 60px
+  @media(max-width breakpoint-md)
+    padding-top 30px
+
+.team__header
+  margin-bottom 90px
+  @media(max-width breakpoint-md)
+    margin-bottom 30px
+
+.team__content
+  display flex
+  @media(max-width breakpoint-md)
+    flex-direction column
+
+.team__block
+  &+&
+    margin-left 30px
+  @media(max-width breakpoint-md)
+    position relative
+    &:nth-child(even)
+      .hover-block
+        flex-direction row-reverse
+      .hover-block__content
+        margin-left 0
+        margin-right 20px
+      .team__block-info
+        left 0
+    &+&
+      margin-left 30px
+      margin-top 20px
+
+.team__block-link
+  width 56px
+  height 56px
+  flex-center()
+  background sweet-corn
+  transition all .2s
+  &+&
+    border-left 1px solid rgba(froly, .5)
+  .icon
+    width 26px
+    height 26px
+    fill froly
+    transition all .2s
+  &:hover
+    background froly
+    .icon
+      fill white
+  @media(max-width breakpoint-md)
+    width 40px
+    height 40px
+    .icon
+      width 24px
+      height 24px
+
+.team__block-info
+  margin-top 30px
+  text-align center
+  @media(max-width breakpoint-md)
+    position absolute
+    right 0
+    top 0
+    width 40%
+  @media(max-width breakpoint-sm)
+    margin-top 10px
+
+.team__block-name
+  color mine-shaft
+  font-family font-m
+  font-size 14px
+  font-weight bold
+  text-transform uppercase
+  margin-bottom 10px
+  @media(max-width breakpoint-md)
+    font-size 18px
+  @media(max-width breakpoint-sm)
+    margin-bottom 5px
+
+.team__block-post
+  color dusty-gray
+  font-family font-r
+  font-style italic
+  font-size 15px
+  font-weight 300
+  line-height 24px

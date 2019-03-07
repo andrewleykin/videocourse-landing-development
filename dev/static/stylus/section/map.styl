@@ -1,0 +1,48 @@
+.map
+  padding 60px 0
+  background-image url('../img/content/map/bg.jpg')
+  background-size cover
+  display block
+  @media(max-width breakpoint-md)
+    padding 30px 0
+
+.map__wrap
+  display flex
+  justify-content center
+  align-items center
+  flex-direction column
+
+.map__icon
+  margin-bottom 17px
+  .icon
+    width 26px
+    height 26px
+    fill froly
+  @media(max-width breakpoint-md)
+    margin-bottom 10px
+    .icon
+      width 15px
+      height 15px
+
+.map__title
+  color froly
+  font-family font-m
+  font-size 24px
+  font-weight 700
+  text-transform uppercase
+  position relative
+  &:after
+    content ''
+    display block
+    width 60px
+    height 3px
+    background-color froly
+    position absolute
+    bottom -24px
+    left 50%
+    transform translateX(-50%)
+  @media(max-width breakpoint-md)
+    font-size 18px
+    &:after
+      bottom -12px
+      width 40px
